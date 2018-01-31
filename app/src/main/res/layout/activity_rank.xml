@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rank"
+    tools:context="com.dayeon.app.sswitch.RankActivity">
+
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_rank_top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/rankTitle"
+        android:background="@drawable/bg_fav_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="너와 나의 순위"
+        android:textColor="@color/yellow"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/topImageView" />
+
+    <ImageView
+        android:id="@+id/medalImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/bg_rank_img"
+        android:layout_marginBottom="9dp"
+        android:layout_above="@+id/rankTitle"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/rankList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rankTitle"
+        android:layout_above="@+id/menuLayout"></ListView>
+
+
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:background="@drawable/bg_menubar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/write"
+            android:src="@drawable/btn_write"
+            android:onClick="onClickMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/daummap"
+            android:src="@drawable/btn_map"
+            android:onClick="onClickMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/home"
+            android:src="@drawable/btn_home"
+            android:onClick="onClickMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/fav"
+            android:src="@drawable/btn_fav"
+            android:onClick="onClickMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/rank"
+            android:src="@drawable/btn_rank_on"
+            android:onClick="onClickMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

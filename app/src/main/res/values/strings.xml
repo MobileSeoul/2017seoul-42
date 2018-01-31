@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">쓰위치</string>
+    <string name="kakao_app_key">d8da16e88ca7f92bc4968236bd7f21c7</string>
+
+    <string name="rationale_title">Permission required</string>
+    <string name="rationale_message">we need permission for read <b>contact</b> and find your <b>location</b></string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_del_fav_dialog">DelFavDialog</string>
+</resources>
